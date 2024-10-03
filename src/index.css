@@ -1,0 +1,16 @@
+/* index.css */
+body.default-background {
+  margin: 0;
+  padding: 0;
+  background-image: url("/src/image/bg-login.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+body.beranda-background {
+  background-color: #181a1c;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
