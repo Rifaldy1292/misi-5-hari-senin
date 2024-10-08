@@ -11,6 +11,7 @@ body.default-background {
 body.beranda-background {
   background-color: #181a1c;
 }
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

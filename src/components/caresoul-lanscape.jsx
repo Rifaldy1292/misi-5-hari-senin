@@ -10,7 +10,7 @@ import PanahKanan from "../image/beranda/panah-kanan.png";
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const isDesktop = useMediaQuery({ query: "(min-width: 641px)" }); // Menentukan ukuran layar mobile
+  const isDesktop = useMediaQuery({ query: "(min-width: 768px)" }); // Menentukan ukuran layar mobile
 
   const slides = [
     {
@@ -45,7 +45,7 @@ const Carousel = () => {
     // Menampilkan layout desktop dengan list film
     return (
       <div className="relative w-[1440px] h-[309px] mt-[31px] text-[32px] mx-auto">
-        <div className="text-white ml-[80px] mt-[40px]">
+        <div className=" ml-[80px] mt-[40px] text-white  font-bold ]">
           Melanjutkan Tonton Film
         </div>
 

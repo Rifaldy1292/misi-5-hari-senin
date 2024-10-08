@@ -14,7 +14,7 @@ const FormKonfirmasiPassword = ({ children }) => {
       <div className="mt-[6px] relative w-[449px] h-[50px] border-2 border-[rgba(231, 227, 252, 0.23)] rounded-[24px]">
         <input
           type={isPasswordVisible ? "text" : "password"}
-          placeholder="Masukan password"
+          placeholder="Masukan kata sandi"
           className="w-full h-full bg-transparent border-none outline-none text-[22px] text-[#ffffffd6] pl-[20px] placeholder:text-[#ffffffd6]"
         />
         {/* Ikon mata untuk menampilkan/menyembunyikan password */}

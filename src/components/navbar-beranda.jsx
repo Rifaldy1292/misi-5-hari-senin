@@ -5,6 +5,7 @@ import { useState } from "react";
 import Logout from "../image/beranda/log-out.png";
 import Star from "../image/beranda/star.png";
 import ProfilLogin from "../image/beranda/login-variant.png";
+import { Link } from "react-router-dom";
 
 const NavbarBeranda = () => {
   const [isRotated, setIsRotated] = useState(false);
@@ -13,6 +14,8 @@ const NavbarBeranda = () => {
   const handleArrowClick = () => {
     setIsRotated(!isRotated); // Toggle rotasi
     setDropdownVisible(!isDropdownVisible); // Toggle visibilitas dropdown
+    // console.log(document.documentElement.scrollHeight); // Tinggi total dari konten
+    // console.log(document.documentElement.clientHeight); // Tinggi dari viewport yang terlihat
   };
 
   return (
@@ -46,14 +49,16 @@ const NavbarBeranda = () => {
       </nav>
       {isDropdownVisible && ( // Pastikan ini sesuai dengan state
         <div className=" relative w-[300px] md:w-[1400px] mx-auto z-10">
-          <div className="absolute right-0 mt-2px text-white shadow-sm text-[11px] md:text-[20px] w-[113px] h-[104px] md:w-[226px] md:h-[208px] bg-[#181A1C] rounded-[4px] flex flex-col justify-between ml-auto mt-2 p-2 ">
+          <div className="absolute right-0 mt-2px text-white shadow-sm text-[11px] md:text-[20px] w-[113px] h-[104px] md:w-[226px] md:h-[208px] bg-[#181A1C] rounded-[4px] md:rounded-[10px] flex flex-col justify-between ml-auto mt-2 p-2 md:p-[15px] ">
             <div className="cursor-pointer flex items-center space-x-1">
               <img
                 src={ProfilLogin}
                 alt=""
                 className="w-[16px] h-[16px] md:w-[32px] md:h-[32px]"
               />
-              <span>Profil Saya</span>
+              <span>
+                <Link to="/profil"> Profil Saya</Link>
+              </span>
             </div>
             <div className="cursor-pointer flex items-center space-x-1">
               <img

@@ -1,0 +1,61 @@
+{
+  "images": {
+    "trending": [
+      {
+        "id": 1,
+        "image": "../image/beranda/tranding1.png",
+        "title": "Trending Film 1"
+      },
+      {
+        "id": 2,
+        "image": "../image/beranda/tranding2.png",
+        "title": "Trending Film 2"
+      },
+      {
+        "id": 3,
+        "image": "../image/beranda/tranding3.png",
+        "title": "Trending Film 3"
+      },
+      {
+        "id": 4,
+        "image": "../image/beranda/tranding4.png",
+        "title": "Trending Film 4"
+      }
+    ],
+    "newRelease": [
+      {
+        "id": 1,
+        "image": "../image/beranda/rilis1.png",
+        "title": "New Release 1"
+      },
+      {
+        "id": 2,
+        "image": "../image/beranda/rilis2.png",
+        "title": "New Release 2"
+      },
+      {
+        "id": 3,
+        "image": "../image/beranda/rilis3.png",
+        "title": "New Release 3"
+      },
+      {
+        "id": 4,
+        "image": "../image/beranda/rilis4.png",
+        "title": "New Release 4"
+      }
+    ],
+    "top": [
+      { "id": 1, "image": "../image/beranda/top1.png", "title": "Top Film 1" },
+      { "id": 2, "image": "../image/beranda/top2.png", "title": "Top Film 2" },
+      { "id": 3, "image": "../image/beranda/top3.png", "title": "Top Film 3" },
+      { "id": 4, "image": "../image/beranda/top4.png", "title": "Top Film 4" }
+    ],
+    "navigation": {
+      "panahKiri": "../image/beranda/panah-kiri.png",
+      "panahKanan": "../image/beranda/panah-kanan.png"
+    },
+    "warning": {
+      "warning": "/src/image/Warning.png"
+    }
+  }
+}
