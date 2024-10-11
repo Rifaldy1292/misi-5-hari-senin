@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import eyeIcon from "../image/eye-off.png"; // Ikon mata tetap sama
+import eyeIcon from "../image/eye-off.png";
 
 const FormKonfirmasiPassword = ({ children }) => {
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
@@ -17,7 +17,7 @@ const FormKonfirmasiPassword = ({ children }) => {
           placeholder="Masukan kata sandi"
           className="w-full h-full bg-transparent border-none outline-none text-[22px] text-[#ffffffd6] pl-[20px] placeholder:text-[#ffffffd6]"
         />
-        {/* Ikon mata untuk menampilkan/menyembunyikan password */}
+
         <img
           src={eyeIcon}
           alt="Eye Icon"
@@ -27,7 +27,7 @@ const FormKonfirmasiPassword = ({ children }) => {
         />
       </div>
       <div className="flex justify-between items-center w-[449px] mt-[12px]">
-        {children} {/* Menyisipkan children di sini */}
+        {children}
       </div>
     </>
   );

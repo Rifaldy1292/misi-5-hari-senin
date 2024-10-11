@@ -14,7 +14,7 @@ const ContainerLoginDaftar = ({ className, children }) => {
             className="w-[163px] mt-10 scale-[0.7]"
           />
         </span>
-        {children} {/* Menyisipkan children di sini */}
+        {children}
       </div>
     </div>
   );

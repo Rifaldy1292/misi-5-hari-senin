@@ -1,6 +1,3 @@
-// Jika React versi di bawah 17, tambahkan impor berikut:
-// import React from 'react';
-
 const FormUsername = () => {
   return (
     <>

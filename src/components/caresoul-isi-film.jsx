@@ -64,7 +64,7 @@ const CarouseIsilFilm = ({ category, addToFavorites }) => {
   };
 
   const nextSlide = () => {
-    if (currentIndex < slides.length - 1) {
+    if (currentIndex < slides.length - 3) {
       setCurrentIndex(currentIndex + 1);
     }
   };
@@ -107,7 +107,7 @@ const CarouseIsilFilm = ({ category, addToFavorites }) => {
 
         <div
           className="flex transition-transform duration-500 w-[1280px] h-[365px] mx-auto mb-[40px]"
-          style={{ transform: `translateX(-${currentIndex * 22.33}%)` }}
+          style={{ transform: `translateX(-${currentIndex * 24}%)` }}
         >
           {slides.map((slide) => (
             <div

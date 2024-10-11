@@ -1,10 +1,9 @@
-// src/App.jsx
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom"; // Import BrowserRouter, Routes, dan Route
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import LoginPage from "./login";
-import RegisterPage from "./pages/daftar"; // Pastikan kamu memiliki halaman ini
+import RegisterPage from "./pages/daftar";
 import BerandaPage from "./pages/beranda";
 import Profil from "./pages/profil";
-// import "./App.css";
+
 import { useEffect } from "react";
 
 function App() {
@@ -29,7 +28,7 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<LoginPage />} /> {/* Halaman Login */}
+      <Route path="/" element={<LoginPage />} />
       <Route path="/register" element={<RegisterPage />} />
       <Route path="/beranda" element={<BerandaPage />} />
       <Route path="/profil" element={<Profil />} />

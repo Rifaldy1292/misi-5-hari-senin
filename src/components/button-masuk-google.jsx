@@ -10,7 +10,7 @@ const ButtonMasukGoogle = ({ children }) => {
           alt="Logo Google"
           className="m-[14.5px]"
         />
-        {children} {/* Menyisipkan children di sini */}
+        {children}
       </div>
     </>
   );

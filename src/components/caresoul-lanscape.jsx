@@ -10,7 +10,7 @@ import PanahKanan from "../image/beranda/panah-kanan.png";
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const isDesktop = useMediaQuery({ query: "(min-width: 768px)" }); // Menentukan ukuran layar mobile
+  const isDesktop = useMediaQuery({ query: "(min-width: 768px)" });
 
   const slides = [
     {
@@ -42,24 +42,20 @@ const Carousel = () => {
   };
 
   if (isDesktop) {
-    // Menampilkan layout desktop dengan list film
     return (
       <div className="relative w-[1440px] h-[309px] mt-[31px] text-[32px] mx-auto">
         <div className=" ml-[80px] mt-[40px] text-white  font-bold ]">
           Melanjutkan Tonton Film
         </div>
 
-        {/* Panah Kiri */}
         <div className="absolute top-[115px] left-[53px]">
           <img src={PanahKiri} alt="Panah Kiri" />
         </div>
 
-        {/* Panah Kanan */}
         <div className="absolute top-[115px] right-[53px]">
           <img src={PanahKanan} alt="Panah Kanan" />
         </div>
 
-        {/* List Film */}
         <div className=" w-[1280px] h-[309px] mx-auto">
           <div className="flex mt-[15px] ml-[10px]">
             {slides.map((slide, index) => (
@@ -101,13 +97,13 @@ const Carousel = () => {
         onClick={prevSlide}
         className="absolute left-2 top-[120px] transform -translate-y-1/2 rounded-full p-2 shadow bg-slate-500"
       >
-        &#8249; {/* Tombol Kembali */}
+        &#8249;
       </button>
       <button
         onClick={nextSlide}
         className="absolute right-2 top-[120px] transform -translate-y-1/2 rounded-full p-2 shadow bg-slate-500"
       >
-        &#8250; {/* Tombol Selanjutnya */}
+        &#8250;
       </button>
     </div>
   );
