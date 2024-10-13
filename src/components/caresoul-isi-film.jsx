@@ -14,6 +14,7 @@ import top3 from "../image/beranda/top3.png";
 import top4 from "../image/beranda/top4.png";
 import PanahKiri from "../image/beranda/panah-kiri.png";
 import PanahKanan from "../image/beranda/panah-kanan.png";
+import { getFirestore, collection, addDoc } from "firebase/firestore";
 
 const CarouseIsilFilm = ({ category, addToFavorites }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -22,34 +23,34 @@ const CarouseIsilFilm = ({ category, addToFavorites }) => {
 
   const slidesData = {
     trending: [
-      { id: 1, image: tranding1, title: "Trending Film 1" },
-      { id: 2, image: tranding2, title: "Trending Film 2" },
-      { id: 3, image: tranding3, title: "Trending Film 3" },
-      { id: 4, image: tranding4, title: "Trending Film 4" },
-      { id: 5, image: newRelease1, title: "Trending Film 5" },
-      { id: 6, image: top1, title: "Trending Film 6" },
-      { id: 7, image: newRelease3, title: "Trending Film 7" },
-      { id: 8, image: top3, title: "Trending Film 8" },
+      { id: "1", image: tranding1, title: "Trending Film 1" },
+      { id: "2", image: tranding2, title: "Trending Film 2" },
+      { id: "3", image: tranding3, title: "Trending Film 3" },
+      { id: "4", image: tranding4, title: "Trending Film 4" },
+      { id: "5", image: newRelease1, title: "Trending Film 5" },
+      { id: "6", image: top1, title: "Trending Film 6" },
+      { id: "7", image: newRelease3, title: "Trending Film 7" },
+      { id: "8", image: top3, title: "Trending Film 8" },
     ],
     newRelease: [
-      { id: 9, image: newRelease1, title: "New Release 1" },
-      { id: 10, image: newRelease2, title: "New Release 2" },
-      { id: 11, image: newRelease3, title: "New Release 3" },
-      { id: 12, image: newRelease4, title: "New Release 4" },
-      { id: 13, image: top2, title: "New Release 5" },
-      { id: 14, image: tranding1, title: "New Release 6" },
-      { id: 15, image: tranding3, title: "New Release 7" },
-      { id: 16, image: top4, title: "New Release 8" },
+      { id: "9", image: newRelease1, title: "New Release 1" },
+      { id: "10", image: newRelease2, title: "New Release 2" },
+      { id: "11", image: newRelease3, title: "New Release 3" },
+      { id: "12", image: newRelease4, title: "New Release 4" },
+      { id: "13", image: top2, title: "New Release 5" },
+      { id: "14", image: tranding1, title: "New Release 6" },
+      { id: "15", image: tranding3, title: "New Release 7" },
+      { id: "16", image: top4, title: "New Release 8" },
     ],
     top: [
-      { id: 17, image: top1, title: "Top Film 1" },
-      { id: 18, image: top2, title: "Top Film 2" },
-      { id: 19, image: top3, title: "Top Film 3" },
-      { id: 20, image: top4, title: "Top Film 4" },
-      { id: 21, image: newRelease2, title: "Top Film 5" },
-      { id: 22, image: tranding2, title: "Top Film 6" },
-      { id: 23, image: tranding4, title: "Top Film 7" },
-      { id: 24, image: newRelease4, title: "Top Film 8" },
+      { id: "17", image: top1, title: "Top Film 1" },
+      { id: "18", image: top2, title: "Top Film 2" },
+      { id: "19", image: top3, title: "Top Film 3" },
+      { id: "20", image: top4, title: "Top Film 4" },
+      { id: "21", image: newRelease2, title: "Top Film 5" },
+      { id: "22", image: tranding2, title: "Top Film 6" },
+      { id: "23", image: tranding4, title: "Top Film 7" },
+      { id: "24", image: newRelease4, title: "Top Film 8" },
     ],
   };
 
